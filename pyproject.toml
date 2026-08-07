@@ -39,7 +39,7 @@ codex-usage-tray = "codex_usage_tray.__main__:main"
 dev = [
   "mypy>=1.17,<2",
   "pyinstaller>=6.21,<7",
-  "pytest>=8.4,<9",
+  "pytest>=9.1.1,<10",
   "pytest-cov>=6.2,<7",
   "ruff>=0.12,<1",
 ]
