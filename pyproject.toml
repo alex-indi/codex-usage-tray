@@ -37,7 +37,7 @@ codex-usage-tray = "codex_usage_tray.__main__:main"
 
 [dependency-groups]
 dev = [
-  "mypy>=1.17,<2",
+  "mypy>=2.3.0,<3",
   "pyinstaller>=6.21,<7",
   "pytest>=8.4,<9",
   "pytest-cov>=6.2,<7",
