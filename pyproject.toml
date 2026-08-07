@@ -1,0 +1,69 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "codex-usage-tray"
+version = "0.1.0"
+description = "Privacy-first Windows tray app for monitoring OpenAI Codex usage limits, reset times, and saved resets."
+readme = "README.md"
+requires-python = ">=3.14,<3.15"
+license = "MIT"
+authors = [{ name = "Codex Usage Tray contributors" }]
+keywords = ["codex", "windows", "system-tray", "rate-limits", "usage-monitor"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Win32 (MS Windows)",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: Microsoft :: Windows :: Windows 10",
+  "Operating System :: Microsoft :: Windows :: Windows 11",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Utilities",
+]
+dependencies = [
+  "pillow>=12.0,<13",
+  "platformdirs>=4.3,<5",
+  "pystray>=0.19.5,<0.20",
+]
+
+[project.urls]
+Homepage = "https://alex-indi.github.io/codex-usage-tray/"
+Repository = "https://github.com/alex-indi/codex-usage-tray"
+Issues = "https://github.com/alex-indi/codex-usage-tray/issues"
+
+[project.gui-scripts]
+codex-usage-tray = "codex_usage_tray.__main__:main"
+
+[dependency-groups]
+dev = [
+  "mypy>=1.17,<2",
+  "pyinstaller>=6.21,<7",
+  "pytest>=8.4,<9",
+  "pytest-cov>=6.2,<7",
+  "ruff>=0.12,<1",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/codex_usage_tray"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers --strict-config"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.14"
+strict = true
+packages = ["codex_usage_tray"]
+mypy_path = "src"
+
+[[tool.mypy.overrides]]
+module = ["pystray", "pystray.*"]
+ignore_missing_imports = true

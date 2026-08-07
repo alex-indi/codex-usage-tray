@@ -1,0 +1,12 @@
+description: Privacy-first Windows tray app for monitoring OpenAI Codex usage limits, reset times, and saved resets.
+homepage: https://alex-indi.github.io/codex-usage-tray/
+topics:
+  - windows
+  - python
+  - pystray
+  - system-tray
+  - openai-codex
+  - codex-cli
+  - usage-monitor
+  - rate-limits
+  - quota-monitor

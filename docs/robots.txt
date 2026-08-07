@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alex-indi.github.io/codex-usage-tray/sitemap.xml

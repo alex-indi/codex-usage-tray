@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Codex Usage Tray — Codex limits in your Windows tray</title>
+  <meta name="description" content="Privacy-first Windows tray app for monitoring OpenAI Codex usage limits, reset times, and saved resets.">
+  <link rel="canonical" href="https://alex-indi.github.io/codex-usage-tray/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Codex Usage Tray">
+  <meta property="og:description" content="Your Codex limits, always visible. Private and local on Windows.">
+  <meta property="og:url" content="https://alex-indi.github.io/codex-usage-tray/">
+  <meta property="og:image" content="https://alex-indi.github.io/codex-usage-tray/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Codex Usage Tray",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Windows 10, Windows 11",
+    "softwareVersion": "0.1.0",
+    "license": "https://opensource.org/license/mit",
+    "url": "https://alex-indi.github.io/codex-usage-tray/",
+    "downloadUrl": "https://github.com/alex-indi/codex-usage-tray/releases/latest",
+    "description": "Privacy-first Windows tray app for monitoring OpenAI Codex usage limits, reset times, and saved resets."
+  }
+  </script>
+  <style>
+    :root{color-scheme:dark;font-family:Inter,"Segoe UI",sans-serif;background:#101827;color:#f7fafc}
+    *{box-sizing:border-box}body{margin:0}.wrap{max-width:1060px;margin:auto;padding:72px 28px}
+    header{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center;min-height:70vh}
+    .brand{display:flex;gap:16px;align-items:center;color:#b8c7d9}.icon{width:58px;height:58px;border-radius:15px}
+    h1{font-size:clamp(44px,7vw,76px);line-height:1.02;margin:26px 0 18px}.accent{color:#62e6b3}
+    p{font-size:20px;line-height:1.6;color:#bdcad9}.actions{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}
+    a.button{padding:14px 22px;border-radius:10px;text-decoration:none;font-weight:700;background:#45a3ff;color:#071525}
+    a.secondary{background:#26364c;color:white}.panel{background:#18253a;border:1px solid #30415a;border-radius:24px;padding:32px;box-shadow:0 24px 80px #0008}
+    .metric{display:flex;justify-content:space-between;align-items:end;border-bottom:1px solid #30415a;padding:20px 0}.metric strong{font-size:44px}.bar{height:13px;background:#2b3a50;border-radius:8px;overflow:hidden;margin-top:16px}.bar i{display:block;width:68%;height:100%;background:#45a3ff}
+    section{padding:60px 0}h2{font-size:36px}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:22px;border-radius:15px;background:#18253a}.card h3{margin-top:0}.small{font-size:15px}
+    @media(max-width:760px){header{grid-template-columns:1fr}.features{grid-template-columns:1fr}}
+  </style>
+</head>
+<body><main class="wrap">
+  <header><div>
+    <div class="brand"><img class="icon" src="icon.png" alt=""><strong>Codex Usage Tray</strong></div>
+    <h1>Your Codex limits,<br><span class="accent">always visible.</span></h1>
+    <p>A privacy-first Windows tray monitor for dynamic usage windows, reset times, and saved resets. No credential collection. No telemetry.</p>
+    <div class="actions"><a class="button" href="https://github.com/alex-indi/codex-usage-tray/releases/latest">Download for Windows</a><a class="button secondary" href="https://github.com/alex-indi/codex-usage-tray">View source</a></div>
+  </div><div class="panel">
+    <span>Codex — 3-hour window</span><div class="metric"><strong>68%</strong><span>remaining</span></div><div class="bar"><i></i></div>
+    <div class="metric"><span>Resets</span><b>Today at 18:40</b></div><div class="metric"><span>Saved resets</span><strong class="accent">2</strong></div>
+  </div></header>
+  <section><h2>Small by design</h2><div class="features">
+    <div class="card"><h3>Local</h3><p class="small">Reads summaries through the official local Codex App Server. It never opens your credential files.</p></div>
+    <div class="card"><h3>Accurate</h3><p class="small">Displays the windows Codex reports instead of assuming a fixed five-hour limit.</p></div>
+    <div class="card"><h3>Transparent</h3><p class="small">Open source, reproducible assets, SHA-256 release checksums, and no automatic update downloads.</p></div>
+  </div></section>
+  <p class="small">Independent project. Not affiliated with or endorsed by OpenAI. MIT licensed.</p>
+</main></body></html>
