@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling>=1.27"]
+requires = ["hatchling>=1.31,<2"]
 build-backend = "hatchling.build"
 
 [project]
@@ -37,10 +37,10 @@ codex-usage-tray = "codex_usage_tray.__main__:main"
 
 [dependency-groups]
 dev = [
-  "mypy>=1.17,<2",
+  "mypy>=2.3,<3",
   "pyinstaller>=6.21,<7",
-  "pytest>=8.4,<9",
-  "pytest-cov>=6.2,<7",
+  "pytest>=9.1,<10",
+  "pytest-cov>=7.1,<8",
   "ruff>=0.12,<1",
 ]
 

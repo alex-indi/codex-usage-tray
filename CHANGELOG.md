@@ -4,7 +4,10 @@ All notable changes to this project will be documented in this file. The format 
 
 ## [Unreleased]
 
-No unreleased changes yet.
+### Changed
+
+- Updated GitHub Actions and Python development tools to compatible current releases.
+- Grouped future Dependabot updates by ecosystem to reduce pull-request noise.
 
 ## [0.1.0] - 2026-08-07
 
