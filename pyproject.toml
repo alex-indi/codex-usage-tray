@@ -22,7 +22,7 @@ classifiers = [
   "Topic :: Utilities",
 ]
 dependencies = [
-  "pillow>=12.0,<13",
+  "pillow>=12.0,<14",
   "platformdirs>=4.3,<5",
   "pystray>=0.19.5,<0.20",
 ]
